@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/all.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-opacity-75 fixed-top">
+        <div class="container-fluid">
+            <div>
+                <img src="images/Egypt.jpg" width="60" height="60" class="rounded-circle border">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand ms-4 pe-2 border-end border-dark border-opacity-10 text-info" href="#"><strong>EGYPT</strong></a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-info">
+                    <li class="nav-item">
+                        <a class="nav-link text-info" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown border border-info border-2 rounded">
+                        <a class="nav-link dropdown-toggle text-info" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>T</span>rips
+                        </a>
+                        <ul class="dropdown-menu bg-opacity-50 bg-white">
+                            <li><a class="dropdown-item text-info" href="#">CAIRO</a></li>
+                            <li><a class="dropdown-item text-info" href="#">ALEX</a></li>
+                            <li><hr class="dropdown-divider bg-info"></li>
+                            <li><a class="dropdown-item text-info" href="#">LUXOR</a></li>
+                            <li><a class="dropdown-item text-info" href="#">ASWAN</a></li>
+                            <li><a class="dropdown-item text-info" href="#">SHARM EL SHEIKH</a></li>
+                            <li><a class="dropdown-item text-info" href="#">EL GALALA</a></li>
+                            <li><a class="dropdown-item text-info" href="#">MORE...</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-link text-info">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 border-info w-75" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn-header btn text-white btn-info border-0 me-2" type="submit">Search</button>
+                    <button type="button" class="btn btn-header btn-info text-white" data-bs-toggle="modal" data-bs-target="#myModal">Login</button>
+
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-info" style="height: 60px;">
+                    <h5 class="modal-title text-white">Login</h5>
+                    <button type="button" class="btn-close bg-info-subtle" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body p-4">
+                    <label class="text-info d-block">Email address</label>
+                    <input type="text" class="w-100 border-info rounded">
+                    <p class="text-muted">We'll never share your email with anyone else</p>
+
+                    <label class="text-info d-block">Password</label>
+                    <input type="password" class="w-100 border-info rounded">
+
+                    <div class="form-check form-switch mt-3">
+                        <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+                        <label class="form-check-label text-info" for="mySwitch">Remember me</label>
+                    </div>
+                </div>
+
+                <div class="modal-footer d-flex justify-content-between p-4">
+                    <button type="button" class="btn btn-info text-white">Login</button>
+                    <button type="button" class="btn btn-info text-white" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/cairo01.jpg" class="d-block w-100 vh-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-info bg-opacity-25">
+                    <h2>CAIRO</h2>
+                    <p>We had such a great time in Egypt!</p>
+                    <button class="btn btn-info" type="button"><a class="text-white text-decoration-none" href="#">Visit Us</a></button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/aswan.jpg" class="d-block w-100 vh-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-info bg-opacity-50">
+                    <h2>ASWAN</h2>
+                    <p>Thank you, Aswan!</p>
+                    <button class="btn btn-info" type="button"><a class="text-white text-decoration-none" href="#">Visit Us</a></button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/Sharm.jpg" class="d-block w-100 vh-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-info bg-opacity-50">
+                    <h2>SHARM EL SHEIKH</h2>
+                    <p>We love this city!</p>
+                    <button class="btn btn-info" type="button"><a class="text-white text-decoration-none" href="#">Visit Us</a></button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/Sinai.jpg" class="d-block w-100 vh-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-info bg-opacity-50">
+                    <h2>Sinai</h2>
+                    <p>We love this city!</p>
+                    <button class="btn btn-info" type="button"><a class="text-white text-decoration-none" href="#">Visit Us</a></button>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container-fluid p-4" style="background-color: rgb(128, 234, 255);">
+        <h3 class="gradient-text">WELCOME</h3>
+        <p class="text-white fw-semibold">Are you planning to visit Egypt? We offer the ultimate tour in Egypt, covering Cairo, Alex. From a one day trip to a 10 day dream vacation, we will take care of all your needs. Book hotels, 24/7 Customer Service.</p>
+        <button type="button" class="welcome-btn btn bg-white fw-semibold"><a class="text-info text-decoration-none" href="#">Learn more</a></button>
+    </div>
+
+    <hr>
+
+
+    <section class="container-fluid p-1 z-3">
+        <div class="popular-part container-fluid p-5 rounded mb-3">
+            <h3 class="text-center text-white">Popular destinations in Egypt</h3>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <h5 class="gradient-text">GIZA CITY</h5>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Major tourist destinations include the millennia-old monuments in the Nile Valley. Principle among them are the Pyramids and Great Sphinxat Giza</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h5 class="gradient-text">LUXOR CITY</h5>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Luxor is one of Egypt’s most famous ancient cities, often called the world’s greatest open-air museum. It sits on the east bank of the Nile, about 650 km south of Cairo, and was once the mighty capital of the New Kingdom pharaohs (then known as Thebes). </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h5 class="gradient-text">SINAI PENINSULA</h5>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>The Sinai Peninsula is a unique and striking region of Egypt, forming a triangular bridge between Africa and Asia. Bordered by the Mediterranean Sea to the north and the Red Sea to the south, it’s the only part of Egypt located in Asia, making it a crossroads of cultures, trade, and history.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <div class="container-fluid p-1 row">
+        <div class="translate-sec p-1 col-12 mx-3">
+            <h3 class="text-white text-center translate rounded">Translate From Arabic To English</h3>
+            <div class="mx-auto" style="width: 90%;">
+                <p class="text-white">Write and Translate. <span class="text-dark">Press Here</span></p>
+                <button type="button" class="btn btn-light text-info mb-3 copy-btn" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Copy to clipboard" onclick="alert('Copied!')">Copy</button>
+                <textarea placeholder="Translate.." class="d-block border-0 mb-4 px-2 " rows="5" style="width: 100%;"></textarea>
+            </div>  
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container-fluid p-1 row">
+        <div class="translate-sec p-1 col-12 mx-3">
+            <h3 class="text-white text-center translate rounded">Translate From Arabic To French</h3>
+            <div class="mx-auto" style="width: 90%;">
+                <p class="text-white">Write and Translate. <span class="text-dark">Press Here</span></p>
+                <button type="button" class="btn btn-light text-info mb-3 copy-btn" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Copy to clipboard" onclick="alert('Copied!')">Copy</button>
+                <textarea placeholder="Translate.." class="d-block border-0 mb-4 px-2" rows="5" style="width: 100%;"></textarea>
+            </div>  
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container-fluid p-1 row">
+        <div class="translate-sec p-1 col-12 mx-3">
+            <h3 class="text-white text-center translate rounded">Translate From Arabic To German</h3>
+            <div class="mx-auto" style="width: 90%;">
+                <p class="text-white">Write and Translate. <span class="text-dark">Press Here</span></p>
+                <button type="button" class="btn btn-light text-info mb-3 copy-btn" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Copy to clipboard" onclick="alert('Copied!')">Copy</button>
+                <textarea placeholder="Translate.." class="d-block border-0 mb-4 px-2" rows="5" style="width: 100%;"></textarea>
+            </div>  
+        </div>
+    </div>
+
+    <hr>
+
+
+    <div class="container-fluid fixed-img mx-1"></div>
+
+    <div class="destinations-div rounded mx-1">
+        <h3 class="gradient-text destinations text-center ">POPULAR DESTINATIONS IN EGYPT</h3>
+    </div>
+
+    <div class="container cards-container">
+        <div class="cards-row1 row">
+
+            <div class="container mt-3 col-sm-12 col-lg-4 mx-sm-auto">
+                <div class="card position-relative shadow-lg">
+                    <img class="card-img-top mb-0" src="images/camel.jpg" alt="Card image" style="width:94%; height:400px; margin: 10px 3%">
+                    <div class="card-body position-relative">
+                        <h4 class="card-title text-info">CAIRO</h4>
+                        <p class="card-text text-info">Capital of Egypt</p>
+                        <a href="#" class="card-btn btn btn-primary position-absolute">Know more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-3 col-sm-12 col-lg-4 mx-sm-auto">
+                <div class="card position-relative shadow-lg">
+                    <img class="card-img-top mb-0" src="images/alex.jpg" alt="Card image" style="width:94%; height:400px; margin: 10px 3%">
+                    <div class="card-body position-relative">
+                        <h4 class="card-title text-info">ALEXANDRIA</h4>
+                        <p class="card-text text-info">The bride of the Mediterranean</p>
+                        <a href="#" class="card-btn btn btn-primary position-absolute">Know more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-3 col-sm-12 col-lg-4 mx-sm-auto">
+                <div class="card position-relative shadow-lg">
+                    <img class="card-img-top mb-0" src="images/luxor1.jpg" alt="Card image" style="width:94%; height:400px; margin: 10px 3%">
+                    <div class="card-body position-relative">
+                        <h4 class="card-title text-info">LUXOR</h4>
+                        <p class="card-text text-info">The Capital of the Ancient Kingdom</p>
+                        <a href="#" class="card-btn btn btn-primary position-absolute">Know more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cards-row2 mt-4 row">
+
+            <div class="container mt-3 col-sm-12 col-lg-4 mx-sm-auto">
+                <div class="card position-relative shadow-lg">
+                    <img class="card-img-top mb-0" src="images/aswan2.jpg" alt="Card image" style="width:94%; height:400px; margin: 10px 3%">
+                    <div class="card-body position-relative">
+                        <h4 class="card-title text-info">ASWAN</h4>
+                        <p class="card-text text-info">Nubian City in The South of Egypt</p>
+                        <a href="#" class="card-btn btn btn-primary position-absolute">Know more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-3 col-sm-12 col-lg-4 mx-sm-auto">
+                <div class="card position-relative shadow-lg">
+                    <img class="card-img-top mb-0" src="images/capital.jpeg" alt="Card image" style="width:94%; height:400px; margin: 10px 3%">
+                    <div class="card-body position-relative">
+                        <h4 class="card-title text-info">NEW CAPITAL</h4>
+                        <p class="card-text text-info">The New Administrative Capital</p>
+                        <a href="#" class="card-btn btn btn-primary position-absolute">Know more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-3 col-sm-12 col-lg-4 mx-sm-auto">
+                <div class="card position-relative shadow-lg">
+                    <img class="card-img-top mb-0" src="images/Sharm2.jpg" alt="Card image" style="width:94%; height:400px; margin: 10px 3%">
+                    <div class="card-body position-relative">
+                        <h4 class="card-title text-info">SHARM EL SHEIKH</h4>
+                        <p class="card-text text-info">Beautiful City in Egypt</p>
+                        <a href="#" class="card-btn btn btn-primary position-absolute">Know more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="cards-row3 mt-4 row">
+            <div class="container mt-3 col-sm-12 col-lg-4">
+                <div class="card position-relative shadow-lg mx-auto">
+                    <img class="card-img-top mb-0" src="images/Siwa.jpeg" alt="Card image" style="width: 94%; height:400px; margin: 10px 3%">
+                    <div class="card-body position-relative">
+                        <h4 class="card-title text-info">SIWA</h4>
+                        <p class="card-text text-info">Popular by its beautiful Oases</p>
+                        <a href="#" class="card-btn btn btn-primary position-absolute">Know more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-3 col-sm-12 col-lg-4 mx-50">
+                <div class="card position-relative shadow-lg mx-auto">
+                    <img class="card-img-top mb-0" src="images/Hurghada.jpeg" alt="Card image" style="width:94%; height:400px; margin: 10px 3%">
+                    <div class="card-body position-relative">
+                        <h4 class="card-title text-info">HURGHADA</h4>
+                        <p class="card-text text-info">City on The Red Sea</p>
+                        <a href="#" class="card-btn btn btn-primary position-absolute">Know more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container-fluid fixed-img2 mx-1 mt-5"></div>
+
+    <hr>
+
+
+    <div class="container-fluid bg-info-subtle" style="height: 90px;">
+        <h2 class="text-center h-100 gradient-text thanks" style="line-height: 90px;">THANKS FOR</h2>
+    </div>
+
+
+
+
+
+
+    <div class="container my-5">
+        <div class="row g-4">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="back back1 position-relative rounded w-100" style="height: 450px;">
+                    <div class="overlay position-absolute rounded h-100 w-100 bg-secondary bg-opacity-50 p-4">
+                        <div class="thanks-text">
+                            <h5 class="text-white">All thanks and appreciation</h5>
+                            <p class="text-white"><i class="far fa-clock"></i> October 15, 2020</p>
+                        </div>
+                        <div class="position-absolute bottom-0">
+                            <img src="images/employee1.jpg" class="h-25 w-25 border border-1 border-light rounded-circle">
+                            <h6 class="text-white mb-0">Eng. Mohamed Ismail</h6>
+                            <p class="text-white">Director of UI/UX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="back back2 position-relative rounded w-100" style="height: 450px;">
+                    <div class="overlay position-absolute rounded h-100 w-100 bg-secondary bg-opacity-50 p-4">
+                        <div class="thanks-text">
+                            <h5 class="text-white">All thanks and appreciation</h5>
+                            <p class="text-white"><i class="far fa-clock"></i> October 15, 2020</p>
+                        </div>
+                        <div class="position-absolute bottom-0">
+                            <img src="images/employee2.jpg" class="h-25 w-25 border border-1 border-light rounded-circle">
+                            <h6 class="text-white mb-0">Eng. Rawan Hany</h6>
+                            <p class="text-white">Director of UI/UX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="back back3 position-relative rounded w-100" style="height: 450px;">
+                    <div class="overlay position-absolute rounded h-100 w-100 bg-secondary bg-opacity-50 p-4">
+                        <div class="thanks-text">
+                            <h5 class="text-white">All thanks and appreciation</h5>
+                            <p class="text-white"><i class="far fa-clock"></i> October 15, 2020</p>
+                        </div>
+                        <div class="position-absolute bottom-0">
+                            <img src="images/employee3.jpg" class="h-25 w-25 border border-1 border-light rounded-circle">
+                            <h6 class="text-white mb-0">Eng. Islam Mohamed</h6>
+                            <p class="text-white">Director of UI/UX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+        
+    
+
+
+    <hr>
+
+    <h2 class="gradient-text text-center my-5">EGYPT NEWS</h2>
+
+    <div class="container overflow-hidden news-container bg-light rounded d-flex justify-content-between pe-0">
+        <div class="news-text w-75 position-relative p-3" >
+            <h2>Podcast Title</h2>
+            <p class="mb-2"><i class="fas fa-calendar-alt"></i> Mon, May 25th 2020</p>
+
+            <div class="underline bg-primary rounded"></div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam pariatur obcaecati ipsa porro quae, rem facilis dignissimos, odit excepturi fuga eligendi ipsum, asperiores recusandae soluta nam repudiandae quidem minus aliquam.
+            Placeat accusamus modi nobis voluptas mollitia sint aliquid iste nesciunt eius porro ab beatae quibusdam facere quam, at vero voluptate quae nam illo sed quos. Facere voluptas placeat dolores pariatur!
+            </p>
+
+            <div class="buttons position-absolute" style="bottom: 60px;">
+                <button type="button" class="news-btn bg-secondary-subtle border-0 px-2"><i class="fas fa-podcast"></i> Podcast</button>
+                <button type="button" class="news-btn bg-secondary-subtle border-0 px-2"><i class="fas fa-clock"></i> 55 mins</button>
+                <button type="button" class="special-btn bg-secondary-subtle border-0 px-2"> <a href="#" class="text-decoration-none text-success"><i class="fas fa-play"></i> Play Episode</a></button>
+            </div>
+        </div>
+
+        <div class="news-img position-relative" style="width: 300px; height: 400px;">
+            <img src="images/news-img1.jpeg" class="position-absolute w-100 h-100 rounded-end">
+        </div>
+    </div>
+
+    <div class="container overflow-hidden news-container bg-light rounded my-5 d-flex justify-content-between ps-0">
+
+        <div class="news-img2 position-relative" style="width: 300px; height: 400px;">
+            <img src="images/news-img2.jpeg" class="position-absolute w-100 h-100 rounded-start">
+        </div>
+
+        <div class="news-text w-75 position-relative p-3" >
+            <h2>Podcast Title</h2>
+            <p class="mb-2"><i class="fas fa-calendar-alt"></i> Mon, May 25th 2020</p>
+
+            <div class="underline bg-danger rounded"></div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam pariatur obcaecati ipsa porro quae, rem facilis dignissimos, odit excepturi fuga eligendi ipsum, asperiores recusandae soluta nam repudiandae quidem minus aliquam.
+            Placeat accusamus modi nobis voluptas mollitia sint aliquid iste nesciunt eius porro ab beatae quibusdam facere quam, at vero voluptate quae nam illo sed quos. Facere voluptas placeat dolores pariatur!
+            </p>
+
+            <div class="buttons position-absolute" style="bottom: 60px;">
+                <button type="button" class="news-btn bg-secondary-subtle border-0 px-2"><i class="fas fa-podcast"></i> Podcast</button>
+                <button type="button" class="news-btn bg-secondary-subtle border-0 px-2"><i class="fas fa-clock"></i> 55 mins</button>
+                <button type="button" class="special-btn2 bg-secondary-subtle border-0 px-2"> <a href="#" class="text-decoration-none text-success"><i class="fas fa-play"></i> Play Episode</a></button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container overflow-hidden news-container bg-light rounded d-flex justify-content-between pe-0">
+        <div class="news-text w-75 position-relative p-3" >
+            <h2>Podcast Title</h2>
+            <p class="mb-2"><i class="fas fa-calendar-alt"></i> Mon, May 25th 2020</p>
+
+            <div class="underline bg-success rounded"></div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam pariatur obcaecati ipsa porro quae, rem facilis dignissimos, odit excepturi fuga eligendi ipsum, asperiores recusandae soluta nam repudiandae quidem minus aliquam.
+            Placeat accusamus modi nobis voluptas mollitia sint aliquid iste nesciunt eius porro ab beatae quibusdam facere quam, at vero voluptate quae nam illo sed quos. Facere voluptas placeat dolores pariatur!
+            </p>
+
+            <div class="buttons position-absolute" style="bottom: 60px;">
+                <button type="button" class="news-btn bg-secondary-subtle border-0 px-2"><i class="fas fa-podcast"></i> Podcast</button>
+                <button type="button" class="news-btn bg-secondary-subtle border-0 px-2"><i class="fas fa-clock"></i> 55 mins</button>
+                <button type="button" class="special-btn3 bg-secondary-subtle border-0 px-2"> <a href="#" class="text-decoration-none text-success"><i class="fas fa-play"></i> Play Episode</a></button>
+            </div>
+        </div>
+
+        <div class="news-img position-relative" style="width: 300px; height: 400px;">
+            <img src="images/news-img3.jpeg" class="position-absolute w-100 h-100 rounded-end">
+        </div>
+    </div>
+
+
+    <div class="container overflow-hidden news-container bg-light rounded my-5 d-flex justify-content-between ps-0">
+
+        <div class="news-img2 position-relative" style="width: 300px; height: 400px;">
+            <img src="images/news-img4.jpeg" class="position-absolute w-100 h-100 rounded-start">
+        </div>
+
+        <div class="news-text w-75 position-relative p-3" >
+            <h2>Podcast Title</h2>
+            <p class="mb-2"><i class="fas fa-calendar-alt"></i> Mon, May 25th 2020</p>
+
+            <div class="underline bg-warning rounded"></div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam pariatur obcaecati ipsa porro quae, rem facilis dignissimos, odit excepturi fuga eligendi ipsum, asperiores recusandae soluta nam repudiandae quidem minus aliquam.
+            Placeat accusamus modi nobis voluptas mollitia sint aliquid iste nesciunt eius porro ab beatae quibusdam facere quam, at vero voluptate quae nam illo sed quos. Facere voluptas placeat dolores pariatur!
+            </p>
+
+            <div class="buttons position-absolute" style="bottom: 60px;">
+                <button type="button" class="news-btn bg-secondary-subtle border-0 px-2"><i class="fas fa-podcast"></i> Podcast</button>
+                <button type="button" class="news-btn bg-secondary-subtle border-0 px-2"><i class="fas fa-clock"></i> 55 mins</button>
+                <button type="button" class="special-btn4 bg-secondary-subtle border-0 px-2"> <a href="#" class="text-decoration-none text-success"><i class="fas fa-play"></i> Play Episode</a></button>
+            </div>
+        </div>
+    </div>
+
+
+    <h2 class="gradient-text text-center mb-5">JOIN US</h2>
+
+
+    <div class="container mx-auto mb-5 row justify-content-evenly">
+        <div class="join-div col-6 col-lg-2 rounded p-4 text-info text-center" style="height: 200px;">
+            <h4>Subscribe Now</h4>
+            <img src="images/twitter.png" class="my-3 bg-primary rounded" width="60" height="60">
+            <h5>Go to link</h5>
+        </div>
+
+
+        <div class="join-div col-6 col-lg-2 rounded p-4 text-info text-center" style="height: 200px;"">
+            <h4>Follow</h4>
+            <img src="images/whatsapp.jpg" class="my-3 rounded" width="60" height="60">
+            <h5>Go to link</h5>
+        </div>
+
+
+        <div class="join-div col-6 col-lg-2 rounded p-4 text-info text-center" style="height: 200px;">
+            <h4>Like the page</h4>
+            <img src="images/linkedin.png" class="my-3" width="60" height="60">
+            <h5>Go to link</h5>
+        </div>
+        <div class="join-div col-6 col-lg-2 rounded p-4 text-info text-center" style="height: 200px;">
+            <h4>Watch videos</h4>
+            <img src="images/instagram.jpg" class="my-3 rounded" width="60" height="60">
+            <h5>Go to link</h5>
+        </div>
+    </div>
+
+
+    <div class="container-fluid row gx-lg-5 bg-info p-2">
+        <div class="col-sm-12 col-lg-4 text-center text-white" >
+            <p class="border-top border-bottom border-1 border-white p-3"><img src="images/Egypt.jpg" class="rounded-circle shadow-white" width="50" height="50"> Good Company</p>
+            <p>Tel: 000-000-000</p>
+            <p>Address: EGYPT</p>
+            <p>Fax: 000-000-000</p>
+        </div>
+
+        <div class="col-sm-12 col-lg-4 text-center " >
+            <p class="border-top border-bottom border-1 border-white p-3 text-white"><img src="images/Egypt.jpg" class="rounded-circle shadow-white" width="50" height="50"> Important Links</p>
+            <p><a href="#" class="text-dark text-decoration-none d-block">Visit Us</a></p>
+            <p><a href="#" class="text-dark text-decoration-none d-block">Take a look</a></p>
+            <p><a href="#" class="text-dark text-decoration-none d-block">Your health is more important</a></p>
+        </div>
+
+         <div class="col-sm-12 col-lg-4 text-center text-white" >
+            <p class="border-top border-bottom border-1 border-white p-3"><img src="images/Egypt.jpg" class="rounded-circle shadow-white" width="50" height="50"> Good Company</p>
+            <p>Services for all</p>
+            <p>Provide best services</p>
+            <p>You will be better than before</p>
+        </div>
+
+        <h4 class="gradient-text text-center border-top border-bottom border-1 border-white" style="height: 70px; line-height: 70px;" >COPYRIGHT &copy; 2020 SHIMAAHUSSEIN EL SAID, GOOD COMPANY. ALL RIGHTS</h4>
+    </div>
+
+
+
+
+    <div class="fixed-icons position-fixed z-3 d-flex flex-column translate-middle-y top-50 gap-3 end-0">
+        <a href="#" class=""><i class="fab fa-facebook-square fs-1 text-success-emphasis"></i></a>
+        <a href="#" class=""><i class="fab fa-whatsapp-square fs-1 text-success-emphasis"></i></a>
+        <a href="#" class=""><i class="fab fa-twitter-square fs-1 text-success-emphasis"></i></a>
+        <a href="#" class=""><i class="fab fa-linkedin fs-1 text-success-emphasis"></i></a>
+        <a href="#" class=""><i class="fab fa-instagram-square fs-1 text-success-emphasis"></i></a>
+    </div>
+
+
+
+
+
+
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+
+</body>
+</html>

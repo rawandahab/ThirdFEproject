@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel-item img{
+    background-size: cover;
+}
+
+.dropdown-item:hover{
+    color: grey;
+    background-color: rgb(128, 128, 128, 0.3);
+}
+
+.dropdown-toggle:hover span{
+    color: red;
+    font-weight: bold;
+}
+
+
+.btn-header:hover{
+    opacity: 0.6;
+}
+
+.gradient-text{
+    background: -webkit-linear-gradient(purple, rgb(193, 69, 255),rgb(103, 103, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.welcome-btn:hover{
+    background-color: rgb(220, 220, 220)!important; 
+}
+
+.welcome-btn:hover a{
+    color: rgb(112, 191, 197)!important;
+}
+
+.popular-part{
+    background-color: rgb(67, 151, 166);
+}
+
+
+
+.accordion-button:focus{
+    background-color: white !important;
+    box-shadow: 2px 2px 20px 1px rgb(235, 235, 235) inset;
+}
+
+.accordion-collapse{
+    box-shadow: 2px 2px 20px 1px rgb(181, 181, 181) inset;
+}
+
+.accordion-button{
+    box-shadow: 2px 5px 20px 1px rgb(235, 235, 235) inset;
+}
+
+.translate{
+    background-color: rgb(67, 151, 166);
+    height: 60px;
+    line-height: 60px;
+}
+
+.translate-sec{
+    background-color: rgb(165, 215, 224);
+}
+
+.copy-btn:hover{
+    background-color: rgb(220, 220, 220);
+    border: 1px solid white;
+}
+
+.fixed-img{
+    background-image: url(../images/pharaos.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+}
+
+.destinations{
+    line-height: 60px;
+    
+}
+
+.destinations-div{
+    background-color: rgb(156, 201, 209);
+    height: 60px;
+}
+
+.card-btn{
+    right: 10px;
+    top: 20px;
+}
+
+
+.card::after{
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 0;
+    height: 0;
+
+    transition: 1s;
+
+    background-color: rgb(106, 176, 223);
+    border-radius: 5px;
+    opacity: 0;
+
+}
+
+.card:hover::after{
+    width: 100%;
+    height: 100%;
+
+    opacity: 0.3;
+}
+
+.card::before{
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+
+    width: 0;
+    height: 0;
+
+    transition: 1s;
+
+    background-color: rgb(106, 176, 223);
+    border-radius: 5px;
+    opacity: 0;
+
+}
+
+.card:hover::before{
+    width: 100%;
+    height: 100%;
+
+    opacity: 0.3;
+}
+
+
+.fixed-img2{
+    background-image: url(../images/aswan.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+}
+
+.back{
+    background-size: cover;
+}
+
+
+.back1{
+    background-image: url(../images/employee1.jpg);
+}
+
+.back2{
+    background-image: url(../images/employee2.jpg);
+}
+
+
+.back3{
+    background-image: url(../images/employee3.jpg);
+}
+
+.back:hover{
+    transform: scale(0.9, 0.9);
+    transition: 1s;
+    box-shadow: inset 0 150px 100px -80px rgba(98,98,255,0.4);
+}
+
+.back:hover .thanks-text{
+    transform: translateY(10px);
+    transition: 1s;
+}
+
+
+.underline{
+    width: 110px;
+    height: 4px;
+}
+
+.news-img img{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10% 100%);
+}
+
+
+.news-container, .join-div, .join-div img{
+    box-shadow: 1px 1px 20px 1px rgb(255, 168, 255);
+}
+
+.news-btn:hover{
+    background: grey !important;
+}
+
+.special-btn:hover{
+    background-color: rgb(130, 130, 255) !important;
+}
+
+
+.news-img2 img{
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.special-btn2:hover{
+    background-color: rgb(255, 95, 95) !important;
+}
+
+.special-btn3:hover{
+    background-color: greenyellow !important;
+}
+
+.special-btn4:hover{
+    background-color: yellow !important;
+}
+
+.news-container:hover img{
+    transform: scale(1.025,1.025);
+    transition: 1s;
+}
+
+.fixed-icons i:hover{
+    color: rgb(51, 140, 175) !important;
+}
+
+
+.shadow-white {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8) !important;
+}
